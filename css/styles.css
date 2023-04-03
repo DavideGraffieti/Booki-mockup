@@ -5,18 +5,17 @@
 }
 .nav{
     min-height: 10vh;
-    width: 100%;
+    font-weight: 200;
 }
 nav{
     display: flex;
-    padding: 4%;
+    padding: 3% 2.2%;
     justify-content: space-between;
-    align-items: center;
 }
 nav img{
     display: flex;
     flex-direction: row;
-    width: 160px;
+    width: 140px;
 }
 .nav-links{
     flex: auto;
@@ -31,7 +30,6 @@ nav img{
 .nav-links ul li a{
     color: #0065FC;
     text-decoration: none;
-    font-size: medium;
 }
 .nav-links ul li::before{
     content: '';
@@ -81,6 +79,7 @@ nav img{
 @media (max-width: 768px){
     .nav-links ul li {
         flex-grow: 1;
+        max-width: fit-content;
         padding: 0%;
         padding-bottom: 10px;
     };
@@ -106,15 +105,18 @@ nav img{
     .nav-links ul li a{
         font-size: x-large;
         width: 100%;
+        max-width: fit-content;
+
     }
 }
 
 /* SEARCH BLOCK */
 
-.title{
-    padding-left: 4%;
+.head{
+    padding: 0% 4% 0%;
+    font-weight: 200;
 }
 .titleh2{
     margin-bottom: 4px;
-    font-weight: bolder;
+    font-weight: 600;
 }
