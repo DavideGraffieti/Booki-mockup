@@ -9,13 +9,13 @@
 }
 nav{
     display: flex;
-    padding: 3% 2.2%;
+    padding: 3% 2.8% 1%;
     justify-content: space-between;
 }
 nav img{
     display: flex;
     flex-direction: row;
-    width: 140px;
+    width: 100px;
 }
 .nav-links{
     flex: auto;
@@ -25,7 +25,6 @@ nav img{
     list-style: none;
     display: inline-block;
     padding: 2%;
-    position: relative;
 }
 .nav-links ul li a{
     color: #0065FC;
@@ -64,7 +63,6 @@ nav img{
 @media (max-width: 768px) {
     .nav-links {
         margin: 0%;
-       
     }
 }
 @media (max-width: 768px) {
@@ -115,8 +113,25 @@ nav img{
 .head{
     padding: 0% 4% 0%;
     font-weight: 200;
+    margin-bottom: 8px;
 }
 .titleh2{
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     font-weight: 600;
+}
+.search-box{
+    display: flexbox;
+    justify-content: flex-start;
+}
+.search-bar{
+    height: 20px;
+    border-radius: 20px;
+    padding: 0% 4%;
+    height: 30px;
+}
+.search-box svg{
+    flex-direction: row;
+}
+.search-bar button{
+    height: max-content;
 }
