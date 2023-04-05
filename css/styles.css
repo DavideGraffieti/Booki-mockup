@@ -1,117 +1,173 @@
 * {
     font-family: "Raleway", sans-serif;
-  }
-  body {
+}
+body {
     padding: 0 50px;
     max-width: 1400px;
     margin: auto;
-  }
-  nav {
+}
+@media (max-width: 768px) {
+    body {
+        padding: 0 8px;
+    }
+}
+nav {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-  }
-  nav img {
+}
+nav img {
     width: 100px;
-  }
-  .nav-links ul {
+    padding-left: 36px;
+}
+.nav-links ul {
     padding: 0;
     margin: 0;
-  }
-  .nav-links li {
+}
+.nav-links li {
     font-weight: 200;
     list-style: none;
-    padding: 50px 0;
+    padding: 50px 0px;
     margin: 0 40px;
     display: inline-block;
     border-top: 3px solid transparent;
-  }
-  .nav-links li:last-child {
-    margin: 0;
-  }
-  .nav-links li:hover {
+}
+.nav-links li:last-child {
+    margin: 0px;
+    margin-right: 60px;
+}
+.nav-links li:hover {
     border-top: #0065fc solid 3px;
-  }
-  .nav-links a {
+}
+.nav-links a {
     color: #666666;
     text-decoration: none;
-  }
-  .nav-links a:hover {
+}
+.nav-links a:hover {
     color: #0065fc;
-  }
+}
   
+
   /* NAV MOBILE */
-  @media (max-width: 768px) {
-    body {
-      padding: 0 10px;
-    }
-  
+@media (max-width: 768px) {
     nav {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0%;
+        padding-right: 0%;
     }
-  
+}
+@media (max-width: 768px) {
     nav img {
-      display: block;
-      width: 180px;
-      margin: auto;
+        padding: 26px 0px 26px 0px;
+        width: 180px;
+        display: flex;
+        flex-direction: row;
     }
-  
+}
+@media (max-width: 768px) {
     .nav-links {
-      margin: 0%;
+        margin: 0%;
     }
-  
+}
+@media (max-width: 768px) {
     .nav-links ul {
-      display: flex;
-      flex-direction: row;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
     }
-  
-    .nav-links ul li::after {
-      content: "";
-      width: 100%;
-      height: 2px;
-      background: #f2f2f2;
-      display: block;
-      margin-bottom: px;
-      transition: 0.2s;
+}
+@media (max-width: 768px){
+    .nav-links li {
+        flex-basis: 50%;
+        margin: auto;
+        padding: 20px 24px;
+        border-bottom: 3px solid #F2F2F2;
+    };
+}
+@media (max-width: 768px) {
+    .nav-links li:last-child {
+        flex-basis: 50%;
+        margin: auto;
+        padding: 20px 24px;
+        border-bottom: 3px solid #F2F2F2;
     }
-  
-    .nav-links ul li:hover::after {
-      color: #0065fc;
+}
+@media (max-width: 768px){
+    .nav-links li:hover {
+        border-top: transparent;
+        margin: 0;
+        border-bottom: solid #0065fc;
+    };
+}
+@media (max-width: 768px) {
+    .nav-links li:last-child:hover {
+        border-top: transparent;
+        margin: 0;
+        border-bottom: solid #0065fc;
     }
-  
-    .nav-links ul li a {
-      font-size: x-large;
-      width: 100%;
-      max-width: fit-content;
+}
+@media (max-width: 768px) {
+    .nav-links a {
+        display: block;
+        font-size: 25px;
+        margin: auto;
+        width: 100%;
+        max-width: fit-content;
+
     }
-  }
+}
+
+
   /* SEARCH BLOCK */
+
   
-  .head {
+.head {
     padding: 0% 4% 0%;
     font-weight: 200;
     margin-bottom: 8px;
-  }
-  .titleh2 {
+}
+.titleh2 {
     margin-bottom: 8px;
     font-weight: 600;
-  }
-  .search-box {
-    display: flexbox;
-    justify-content: flex-start;
-  }
-  .search-bar {
-    height: 20px;
-    border-radius: 20px;
+}
+.search-block {
     padding: 0% 4%;
-    height: 30px;
-  }
-  .search-box svg {
-    flex-direction: row;
-  }
-  .search-bar button {
+}
+.search-box {
+    display: inline-flex;
+    align-items: center;
+    padding: 0px;
+    height: 40px;
+    border: #F2F2F2 solid;
+    border-radius: 12px;
+}
+.search-logo {
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #F2F2F2;
+}
+.search-input {
     height: max-content;
-  }
-  
+    width: 194px;
+    padding-left: 10px;
+    border: transparent;
+}
+textarea:focus, input:focus {
+    outline: none;
+}
+.search-box button {
+    background-color: #0065FC;
+    height: 46px;
+    width: 78px;
+    padding: 0;
+    color: white;
+    border: none;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
