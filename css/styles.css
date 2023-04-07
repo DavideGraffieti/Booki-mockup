@@ -1,6 +1,10 @@
 * {
     font-family: "Raleway", sans-serif;
 }
+* a {
+    text-decoration: none;
+    color: black;
+}
 body {
     padding: 0 100px;
     max-width: 1400px;
@@ -153,7 +157,7 @@ nav img {
     display: inline-flex;
     align-items: center;
     height: 40px;
-    border: #F2F2F2 solid;
+    border: solid 2px #F2F2F2;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -189,52 +193,97 @@ textarea:focus, input:focus {
     display: none;
 }
 
- /* SEARCH MOBILE */
- @media (max-width: 768px){
+  /* SEARCH MOBILE */
+@media (max-width: 768px){
     .search-box {
         display: inline-flex;
         height: 60px;
         border-radius: 20px;
         width: 100%;
-        overflow: visible;
+        overflow: hidden;
+        border: solid 2px #f2f2f2;
     }
- }
+}
  @media (max-width: 768px) {
     .positionLogo {
         height: 60px;
         width: 60px;
         border-radius: 20px 0 0 20px;
     }
- }
+}
  @media (max-width: 768px) {
     .positionLogo svg {
         height: 24px;
         width: 24px;
     }
- }
- @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
     .search-input {
         padding-left: 18px;
         height: 60px;
         font-size: x-large;
         flex-grow: 1;
     }
- }
- @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
     .search-box button {
         height: 60px;
         width: 60px;
         border-radius: 20px;
     }
- }
- @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
     .search-box span {
         display: none;
     }
- }
- @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
     .search-box button svg {
         display: inline-flex;
         margin: 18px 0;
     }
- }
+}
+
+
+  /* FILTERS */
+
+ 
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: center;
+    padding: 20px 0px;
+}
+.filtersTitle {
+    font-size: 14px;
+}
+.filtersList {
+    display: flex;
+    margin: 0px ;
+    list-style: none;
+}
+.filtersList li {
+    margin-right: 14px;
+}
+.filterListPanelButton {
+    display: flex;
+    align-items: center;
+}
+.filterListIcons {
+    position: absolute;
+    border-radius: 20px;
+    text-align: center;
+    height: 42px;
+    width: 42px;
+    background-color: #DEEBFF;
+}
+.filterListButtonText {
+    padding: 10px 12px 10px 50px;
+    border: solid 2px #f2f2f2;
+    border-radius: 30px;
+    font-size: 15px;
+    margin: 0;
+    font-weight: 600;
+    text-decoration: none;
+}

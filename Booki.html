@@ -1,59 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;600&display=swap"
-            rel="stylesheet">
-        <title>Booki mockup</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;600&display=swap"
+        rel="stylesheet">
+    <title>Booki mockup</title>
+</head>
 
-    <body>
-    <section class="nav">
-        <nav>
-            <a class="navlogo" href="#">
-                <img src="CSS/images/logo/Booki@3x.png" alt="" />
+<body>
+<section class="nav">
+    <nav>
+        <a class="navlogo" href="#">
+            <img src="CSS/images/logo/Booki@3x.png" alt="" />
+        </a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="">Accommodations</a></li>
+                <li><a href="">Activities</a></li>
+            </ul>
+        </div>
+    </nav>
+</section>
+<div class="head">
+    <h3 class="titleh3">Find a place for your dream vacation</h3>
+    <p>Downtown or in nature</p>
+</div>
+
+
+<div class="search-block">
+    <form action=""  class="search-box">
+        <div class="positionLogo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+            fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16
+            16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6
+                10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
+        </div>
+        <input class="search-input" type="text" placeholder="Marseille, France" name="search-box" />
+        <button type="submit">
+            <span>Search</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </button>
+    </form>
+</div>
+
+
+<div class="filters">
+    <h3 class="filtersTitle">Filters</h3>
+    <ul class="filtersList">
+        <li>
+            <a href="" class="filterListPanelButton">
+                <div class="filterListIcons">
+                    <i class="fa-sharp fa-solid fa-money-bill-wave"></i> </div>
+                <p class="filterListButtonText">Low cost</p>
             </a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="">Accommodations</a></li>
-                    <li><a href="">Activities</a></li>
-                </ul>
-            </div>
-        </nav>
-    </section>
-    <div class="head">
-        <h3 class="titleh3">Find a place for your dream vacation</h3>
-        <p>Downtown or in nature</p>
-    </div>
-    
-    <div class="search-block">
-        <form action=""  class="search-box">
-            <div class="positionLogo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16
-                16">
-                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6
-                    10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                </svg>
-            </div>
-                <input class="search-input" type="text" placeholder="Marseille, France" name="search-box" />
-                <button type="submit">
-                    <span>Search</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
-                </button>
-            <div> 
+        </li>
+        
+    </ul>
 
-            </div>
-            </div>
-        </form>
-    </div>
-    </body>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>
